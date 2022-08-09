@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Image Slider</title>
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+
+    @keyframes slide1 {
+      0% {
+        transform: translate(50vw);
+      }
+
+      100% {
+        transform: translate(150vw);
+      }
+    }
+
+    @keyframes slide2 {
+      0% {
+        transform: translate(-150vw);
+      }
+
+      100% {
+        transform: translate(-50vw);
+      }
+    }
+
+    .slider {
+      height: 300px;
+      overflow: hidden;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .img1 {
+      transform: translate(50vw);
+      animation: slide1 2s 3s forwards infinite;
+      display: block;
+      margin: auto;
+      width: 100vw;
+    }
+
+    .img2 {
+      transform: translate(-150vw);
+      animation: slide2 2s 3s forwards infinite;
+      display: block;
+      margin: auto;
+      width: 100vw;
+    }
+
+    header {
+      background-color: black;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: whitesmoke;
+      text-decoration: none;
+      padding-right:3px;
+      padding-left: 3px;
+      height: 40px;
+      margin: auto;
+      font-weight: bolder;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: monospace;
+      font-weight: bolder;
+      margin: 4px;
+      border: 1px solid black;
+    }
+
+    marquee {
+      font-family: cursive;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: underline;
+      color: whitesmoke;
+      background-color: black;
+    }
+
+    .img3 {
+      display: inline;
+      float: right;
+      height: 105px;
+      width: 100px;
+    }
+
+    .text {
+      margin: 30px;
+      padding: 16px;
+    }
+
+    .img4 {
+      display: inline;
+      float: left;
+      height: 105px;
+      width: 100px;
+    }
+
+    .imag {
+      display: inline-block;
+      height: 100px;
+      width: 100px;
+    }
+
+    .float {
+      float: left;
+      width: 150px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Home"> Home </a></li>
+        <li><a href="About"> About </a></li>
+        <li><a href="Services"> Services </a></li>
+        <li><a href="Gallery"> Gallery </a></li>
+        <li><a href="Contact Us">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="slider">
+      <img class="img1 " src="1.jpg" alt="an image" />
+      <img class="img2 " src="2.jpg" alt="an image" />
+    </div>
+  </main>
+  <div>
+    <h1 align="center">NOTE:</h1>
+    <P class="text">I CREATED THIS WEBSITE USING MOBILE PHONE THATSWHY I PUT ONLY TWO PICTURES IN SLIDER.BECAUSE AMAZING SLIDER IS NOT SUPPORTED IN MOBILE PHONE AND I DON'T HAVE LAPTOP OR COMPUTER.I CREATED SLIDER USING CSS ANIMATION.</P>
+  </div>
+  <div>
+    <marquee behavior="alternate" direction="">Developed By Rao Faheem</marquee>
+  </div>
+  <div>
+    <img class="img3" src="3.jpg" alt="an image">
+    The akks Jkkz jJjz zhzhjz zhzjjks shsjjsjs shsjjs shsjsjjjz shshsjjs shsjsjhs shsjsjjs shsjjsjs shsjsjs shshjsjsj bsjsjsj shsjsjjs sj kks s.
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div>
+    <img class="img4" src="4.jpg" alt="an image">
+    the ajajs sjskzkz shajj HJj Jajk ahajaja ahajja anajj shsjajs shsjjs shsjsjjs shajjs shajjs shsjjs shsjjs shsjjjjs shjjs shsjjjs s sjsjjis s.
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+  <div class="float">
+    <figure>
+      <img class="imag" src="3.jpg" alt="an image">
+      <figcaption>
+        Hsjsjjsjsahhshs sjsjkkshsh sjsjkkshsh shsjsjjsgzhz shsjjksyhs sjsjjkshsh shsjkksysgs shsjjjsysys shjjjsyys shhjjsyys sbsjjsjs sbj.</figcaption>
+    </figure>
+  </div>
+  <div class="float">
+    <figure>
+      <img class="imag" src="4.jpg" alt="an image">
+      <figcaption>
+        hJjzbshhhzgz sjsjksyzysy ysgssjjks shsjjgzhzhz sbsjjsyzysg sbsjysysyjs shsjks shsjjks shsjjs shsjjjs shsjjjs sjjkks shjjj.</figcaption>
+    </figure>
+  </div>
+</body>
+
+</html>
